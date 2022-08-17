@@ -1,7 +1,9 @@
 name: Java CI
 on: 
-  push:
-    branches: [main]
+  - push:
+      branches: [main]
+  - pull-request:
+      branches: [main]
 env:
   docker_username: ${{ secrets.USER_NAME }}
   docker_password: ${{ secrets.DOCKER_PASS }}
