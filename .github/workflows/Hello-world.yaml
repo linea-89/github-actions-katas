@@ -47,7 +47,7 @@ jobs:
         - name: Download build
           uses: actions/download-artifact@v2
           with:
-            name: Upload Repo
+            name: code
             path: .
         - name: build docker
           run: chmod +x ci/build-docker.sh && ci/build-docker.sh
